@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" prefHeight="186.0" prefWidth="355.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tarea2.controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <Circle radius="99.0" stroke="BLACK" strokeType="INSIDE">
+      <fill>
+         <LinearGradient endX="0.2985781990521327" endY="1.0" startX="0.3175355450236967">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.6333333253860474" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Circle>
+   <TextField promptText="ingrese su nombre" />
+   <PasswordField promptText="ingrese su contaseña" />
+    <Button onAction="#onHelloButtonClick" text="confirmar" />
+</VBox>
